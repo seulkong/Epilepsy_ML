@@ -1,0 +1,17 @@
+# 대용량 원본/전처리 데이터셋 및 캐시
+.cache_ds004100/
+external_datasets/
+ssl/data/
+ssl/temp_download/
+*.edf
+*.npy
+
+# 파이썬 캐시 및 로그
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# OS 및 에디터 설정
+.DS_Store
+*.code-workspace
