@@ -1,0 +1,22 @@
+%%{init: {'theme': 'default', 'themeVariables': { 'background': '#ffffff'}}}%%
+flowchart TD
+    classDef default fill:#ffffff,stroke:#cccccc,stroke-width:2px,color:#000000
+    classDef convStyle fill:#ffebee,stroke:#ffcdd2,stroke-width:2px,color:#000000
+    classDef propStyle fill:#e8f5e9,stroke:#c8e6c9,stroke-width:2px,color:#000000
+
+    subgraph Conv [기존 접근법: 2D 단일 채널 분석]
+        C1(희소한 두개내 뇌파 신호) --> C2(시간-주파수 대역 분석)
+        C2 --> C3(뇌 신경망 차원의 3D 공간 전파 경로 파악 불가)
+        C3 --> C4(부정확한 수술 치료법 선택 및 예후 예측 한계)
+    end
+
+    subgraph Prop [본 연구 제안: 3차원 궤적 동역학 분석]
+        P1(환자 맞춤형 3D MNI 152 공간 정합) --> P2(힐베르트 변환 기반 전력 질량 중심 추적)
+        P2 --> P3(발작 전파 속도 산출 및 9.24 mm/s 임계값 도출)
+        P3 --> P4(해부학적 뇌엽 층화 기반 정밀 수술 치료 가이드라인)
+    end
+
+    Conv -.-> Prop
+
+    class C1,C2,C3,C4 convStyle
+    class P1,P2,P3,P4 propStyle

@@ -1,0 +1,40 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'background': '#ffffff', 'fontFamily': 'Apple SD Gothic Neo, Helvetica Neue, Arial, sans-serif', 'fontSize': '14px', 'primaryColor': '#ffffde', 'primaryBorderColor': '#cccc77', 'lineColor': '#334155'}}}%%
+flowchart TB
+    classDef blueNode fill:#e1f5fe,stroke:#0288d1,stroke-width:1.5px,color:#0f172a
+    classDef orangeNode fill:#fff3e0,stroke:#ff9800,stroke-width:1.5px,color:#0f172a
+    classDef purpleNode fill:#f3e5f5,stroke:#ab47bc,stroke-width:1.5px,color:#0f172a
+    classDef greenNode fill:#e8f5e9,stroke:#4caf50,stroke-width:2px,color:#0f172a
+
+    subgraph S1 ["1. 데이터 입력 및 증강"]
+        D1[("ds004100 뇌전증 코호트")]
+        AUG["데이터 증강 기법 적용<br/>좌표 섭동 노이즈 및 슬라이딩<br/>윈도우"]
+        D1 --> AUG
+    end
+
+    subgraph S2 ["2. 다각적 피처 추출 및 병합"]
+        F1["Group A: 3차원 궤적 동역학<br/>피처 6종"]
+        F2["Group B: 임상 및 인구학적<br/>피처 9종"]
+        D2[("외부 자가지도학습 파형 데이터")]
+        F3["외부 SSL 신호 피처 결합"]
+        D2 --> F3
+    end
+
+    subgraph S3 ["3. 예측 모델 벤치마크 평가"]
+        MERGE{"통합 피처 세트 구축"}
+        MODEL["다중 예측 모델 학습 및 비교<br/>로지스틱 회귀 / 시계열 딥러닝<br/>/ 앙상블 기법"]
+        MERGE --> MODEL
+    end
+
+    FINAL(["최종 수술 예후 예측 및<br/>조기 진단 가이드라인 제시"])
+
+    D1 --> F2
+    AUG --> F1
+    F1 --> MERGE
+    F2 --> MERGE
+    F3 --> MERGE
+    MODEL --> FINAL
+
+    class D1,AUG blueNode
+    class F1,F2,D2,F3 orangeNode
+    class MERGE,MODEL purpleNode
+    class FINAL greenNode
