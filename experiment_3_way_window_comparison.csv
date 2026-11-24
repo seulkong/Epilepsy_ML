@@ -1,0 +1,19 @@
+Model,ROC-AUC,PR-AUC,Accuracy,F1-Score,Dataset
+ExtraTrees,0.489,0.6811,0.5495,0.6807,1. Early Window (0 - 30s)
+ExtraTrees,0.4328,0.6489,0.5567,0.6939,2. Late Window (30s - 60s)
+ExtraTrees,0.4887,0.7011,0.5224,0.6364,3. Full Seizure Window
+GradientBoosting,0.4554,0.6444,0.5693,0.7051,1. Early Window (0 - 30s)
+GradientBoosting,0.3924,0.601,0.5172,0.6525,2. Late Window (30s - 60s)
+GradientBoosting,0.4865,0.6698,0.5323,0.6544,3. Full Seizure Window
+HistGradientBoosting,0.463,0.6781,0.5099,0.6598,1. Early Window (0 - 30s)
+HistGradientBoosting,0.4301,0.6199,0.5271,0.6643,2. Late Window (30s - 60s)
+HistGradientBoosting,0.4491,0.6699,0.5025,0.6377,3. Full Seizure Window
+LogisticRegression,0.5219,0.7334,0.5941,0.7192,1. Early Window (0 - 30s)
+LogisticRegression,0.6209,0.7627,0.6059,0.7279,2. Late Window (30s - 60s)
+LogisticRegression,0.6543,0.7925,0.6567,0.7723,3. Full Seizure Window
+MLPClassifier,0.5267,0.706,0.5545,0.6739,1. Early Window (0 - 30s)
+MLPClassifier,0.5251,0.6732,0.5665,0.6944,2. Late Window (30s - 60s)
+MLPClassifier,0.55,0.7504,0.5522,0.6484,3. Full Seizure Window
+RandomForest,0.4505,0.6668,0.5545,0.6875,1. Early Window (0 - 30s)
+RandomForest,0.4855,0.6918,0.5813,0.7119,2. Late Window (30s - 60s)
+RandomForest,0.4802,0.668,0.5672,0.6882,3. Full Seizure Window

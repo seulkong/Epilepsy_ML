@@ -1,0 +1,13 @@
+Dataset,Model,ROC-AUC,PR-AUC,Accuracy,F1-Score
+Full Seizure Window,ExtraTrees,0.4887,0.7011,0.5224,0.6364
+Initial 30s Window,ExtraTrees,0.489,0.6811,0.5495,0.6807
+Full Seizure Window,GradientBoosting,0.4865,0.6698,0.5323,0.6544
+Initial 30s Window,GradientBoosting,0.4554,0.6444,0.5693,0.7051
+Full Seizure Window,HistGradientBoosting,0.4491,0.6699,0.5025,0.6377
+Initial 30s Window,HistGradientBoosting,0.463,0.6781,0.5099,0.6598
+Full Seizure Window,LogisticRegression,0.6543,0.7925,0.6567,0.7723
+Initial 30s Window,LogisticRegression,0.5219,0.7334,0.5941,0.7192
+Full Seizure Window,MLPClassifier,0.55,0.7504,0.5522,0.6484
+Initial 30s Window,MLPClassifier,0.5267,0.706,0.5545,0.6739
+Full Seizure Window,RandomForest,0.4802,0.668,0.5672,0.6882
+Initial 30s Window,RandomForest,0.4505,0.6668,0.5545,0.6875

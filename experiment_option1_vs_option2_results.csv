@@ -1,0 +1,21 @@
+Condition,Model,Train CV ROC-AUC,Holdout ROC-AUC,Holdout PR-AUC,Holdout Accuracy,Holdout F1-Score
+Condition 1 (Option 1: External SSL),ExtraTrees,0.6816,0.4982,0.7865,0.6389,0.7797
+Condition 3 (Option 1+2 Hybrid),ExtraTrees,0.6692,0.4776,0.7417,0.6389,0.7797
+Condition 0 (Baseline),ExtraTrees,0.6332,0.4073,0.703,0.6667,0.8
+Condition 2 (Option 2: Augmentation & Math),ExtraTrees,0.6568,0.3745,0.6805,0.6111,0.7586
+Condition 1 (Option 1: External SSL),GradientBoosting,0.5462,0.2545,0.5898,0.4167,0.5882
+Condition 3 (Option 1+2 Hybrid),GradientBoosting,0.5924,0.2497,0.6401,0.4167,0.5714
+Condition 0 (Baseline),GradientBoosting,0.6076,0.2,0.6352,0.5278,0.6909
+Condition 2 (Option 2: Augmentation & Math),GradientBoosting,0.619,0.1709,0.5595,0.2593,0.4118
+Condition 0 (Baseline),LogisticRegression,0.7445,0.5818,0.7303,0.75,0.8302
+Condition 1 (Option 1: External SSL),LogisticRegression,0.7288,0.5818,0.6991,0.8056,0.8679
+Condition 3 (Option 1+2 Hybrid),LogisticRegression,0.7142,0.5515,0.6573,0.75,0.828
+Condition 2 (Option 2: Augmentation & Math),LogisticRegression,0.7226,0.5483,0.6546,0.75,0.828
+Condition 1 (Option 1: External SSL),MLPClassifier,0.6922,0.6182,0.8172,0.6389,0.7451
+Condition 3 (Option 1+2 Hybrid),MLPClassifier,0.6772,0.5972,0.7946,0.6759,0.7712
+Condition 0 (Baseline),MLPClassifier,0.6542,0.5927,0.7618,0.6667,0.76
+Condition 2 (Option 2: Augmentation & Math),MLPClassifier,0.6596,0.4739,0.6939,0.6667,0.76
+Condition 3 (Option 1+2 Hybrid),RandomForest,0.5791,0.5483,0.7645,0.6111,0.7558
+Condition 1 (Option 1: External SSL),RandomForest,0.5903,0.5345,0.7788,0.6667,0.7857
+Condition 0 (Baseline),RandomForest,0.5728,0.52,0.7315,0.7778,0.8621
+Condition 2 (Option 2: Augmentation & Math),RandomForest,0.6007,0.4311,0.6712,0.5833,0.7273

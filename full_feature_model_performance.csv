@@ -1,0 +1,3 @@
+Model Architecture,ROC-AUC,PR-AUC (AUPRC),Accuracy,F1-Score
+MLP (Deep Learning),0.6231,0.7955,0.5821,0.6818
+RandomForest,0.4313,0.619,0.5871,0.7243

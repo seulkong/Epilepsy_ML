@@ -1,0 +1,19 @@
+Feature_Set,Model,ROC-AUC,PR-AUC,Accuracy,F1-Score
+Group A + B (Full),ExtraTrees,0.522,0.6865,0.5821,0.6978
+Group A Only (Trajectory),ExtraTrees,0.4887,0.7011,0.5224,0.6364
+Group B Only (Clinical/Anatomical),ExtraTrees,0.3438,0.5881,0.5123,0.6574
+Group A + B (Full),GradientBoosting,0.3489,0.5997,0.4975,0.6354
+Group A Only (Trajectory),GradientBoosting,0.4865,0.6698,0.5323,0.6544
+Group B Only (Clinical/Anatomical),GradientBoosting,0.3487,0.6173,0.532,0.6735
+Group A + B (Full),HistGradientBoosting,0.2896,0.5708,0.4826,0.6286
+Group A Only (Trajectory),HistGradientBoosting,0.4491,0.6699,0.5025,0.6377
+Group B Only (Clinical/Anatomical),HistGradientBoosting,0.2747,0.5612,0.4433,0.595
+Group A + B (Full),LogisticRegression,0.5596,0.7021,0.592,0.6985
+Group A Only (Trajectory),LogisticRegression,0.6543,0.7925,0.6567,0.7723
+Group B Only (Clinical/Anatomical),LogisticRegression,0.5487,0.7438,0.5567,0.6617
+Group A + B (Full),MLPClassifier,0.5627,0.7115,0.5522,0.6591
+Group A Only (Trajectory),MLPClassifier,0.55,0.7504,0.5522,0.6484
+Group B Only (Clinical/Anatomical),MLPClassifier,0.4489,0.6931,0.5172,0.6475
+Group A + B (Full),RandomForest,0.4321,0.6296,0.5274,0.6735
+Group A Only (Trajectory),RandomForest,0.4802,0.668,0.5672,0.6882
+Group B Only (Clinical/Anatomical),RandomForest,0.2521,0.534,0.4926,0.6485
